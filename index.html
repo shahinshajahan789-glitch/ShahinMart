@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>ShahinMART - School &amp; College Stationery | Venjaramoodu, Kerala</title>
+    <meta name="description" content="Premium online bookstore and stationery shop for ShahinMART in Venjaramoodu, Kerala. Order notebooks, school essentials, bulk institutional supplies with instant UPI, QR, and Cash on Delivery." />
+    
+    <!-- PWA & Mobile Web App Meta Tags -->
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ShahinMART" />
+    <meta name="application-name" content="ShahinMART" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(reg) {
+            console.log('ShahinMART ServiceWorker registered:', reg.scope);
+          }).catch(function(err) {
+            console.warn('ServiceWorker registration error:', err);
+          });
+        });
+      }
+    </script>
+
+    <meta property="og:title" content="ShahinMART - School &amp; College Stationery | Venjaramoodu, Kerala" />
+    <meta property="og:description" content="Premium online bookstore and stationery shop for ShahinMART in Venjaramoodu, Kerala. Order notebooks, school essentials, bulk institutional supplies with instant UPI, QR, and Cash on Delivery." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

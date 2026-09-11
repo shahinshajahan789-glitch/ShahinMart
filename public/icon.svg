@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base background rounded square -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer golden glow ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Open Notebook Body -->
+  <g transform="translate(64, 96)">
+    <!-- Left Page -->
+    <path d="M192 250 C130 230 60 240 20 256 L20 60 C60 45 130 35 192 56 Z" fill="url(#pageGrad)" stroke="#cbd5e1" stroke-width="3" />
+    <!-- Right Page -->
+    <path d="M192 250 C254 230 324 240 364 256 L364 60 C324 45 254 35 192 56 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" />
+    <!-- Notebook Spine -->
+    <path d="M192 56 L192 250" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" />
+    <!-- Left page ruled lines -->
+    <line x1="50" y1="100" x2="165" y2="90" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <line x1="50" y1="135" x2="165" y2="125" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <line x1="50" y1="170" x2="165" y2="160" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <line x1="50" y1="205" x2="165" y2="195" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <!-- Right page ruled lines -->
+    <line x1="219" y1="90" x2="334" y2="100" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <line x1="219" y1="125" x2="334" y2="135" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <line x1="219" y1="160" x2="334" y2="170" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <line x1="219" y1="195" x2="334" y2="205" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Golden Pen across the book -->
+  <g transform="translate(320, 110) rotate(35)">
+    <!-- Pen barrel -->
+    <rect x="-12" y="0" width="24" height="180" rx="6" fill="url(#goldGrad)" />
+    <!-- Pen grip -->
+    <rect x="-12" y="140" width="24" height="40" rx="2" fill="#0f172a" />
+    <!-- Pen nib -->
+    <path d="M-12 180 L0 216 L12 180 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+    <!-- Nib tip -->
+    <circle cx="0" cy="214" r="2" fill="#0f172a" />
+    <!-- Clip -->
+    <path d="M-14 20 L-22 20 L-22 70 L-14 65" fill="#f59e0b" />
+  </g>
+
+  <!-- Text brand logo in icon: ShahinMART -->
+  <text x="256" y="415" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="1">
+    Shahin<tspan fill="#f59e0b">MART</tspan>
+  </text>
+  <text x="256" y="445" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" fill="#94a3b8" letter-spacing="3">
+    STATIONERY • KERALA
+  </text>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "ShahinMART - School & College Stationery",
+  "description": "Premium online bookstore and stationery shop for ShahinMART in Venjaramoodu, Kerala. Order notebooks, school essentials, bulk institutional supplies with instant UPI, QR, and Cash on Delivery.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
